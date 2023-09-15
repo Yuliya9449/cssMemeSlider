@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>cssMemeSlider</title>
+</head>
+
+<body>
+  <main>
+    <div class="wrapper slider__wrapper">
+
+      <!-- inputs -->
+      <input type="radio" class="slider__toggle" name="slider__toggle" id="toggle-1" checked>
+      <input type="radio" class="slider__toggle" name="slider__toggle" id="toggle-2">
+      <input type="radio" class="slider__toggle" name="slider__toggle" id="toggle-3">
+      <input type="radio" class="slider__toggle" name="slider__toggle" id="toggle-4">
+
+      <!-- memes -->
+      <div class="slider__memes-wrapper">
+        <div class="meme__wrapper meme__wrapper_1">
+          <img class="slider__meme slider__meme_1" src="./assets/codewars.svg" alt="Codewars meme">
+        </div>
+
+        <div class="meme__wrapper meme__wrapper_2">
+          <img class="slider__meme slider__meme_2" src="./assets/activist.svg" alt="Activist meme">
+        </div>
+
+        <div class="meme__wrapper meme__wrapper_3">
+          <img class="slider__meme slider__meme_3" src="./assets/helper.svg" alt="Helper meme">
+        </div>
+
+        <div class="meme__wrapper meme__wrapper_4">
+          <img class="slider__meme slider__meme_4" src="./assets/its-a-good-job.svg" alt="Its a good job meme">
+        </div>
+      </div>
+
+      <!-- controls -->
+      <div class="slider__controls-wrapper">
+
+        <label class="slider__control" for="toggle-1"><span></span></label>
+
+        <label class="slider__control" for="toggle-2"><span></span></label>
+
+        <label class="slider__control" for="toggle-3"><span></span></label>
+
+        <label class="slider__control" for="toggle-4"><span></span></label>
+      </div>
+
+      <!-- titles -->
+      <div class="meme-titles__wrapper">
+        <h2 class="meme-title meme-title_1">Codewars</h2>
+        <h2 class="meme-title meme-title_2">Activist</h2>
+        <h2 class="meme-title meme-title_3">Helper</h2>
+        <h2 class="meme-title meme-title_4">It's a good job</h2>
+      </div>
+
+    </div>
+  </main>
+</body>
+
+</html>
