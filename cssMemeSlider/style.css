@@ -30,6 +30,13 @@ body {
   gap: 1rem;
 }
 
+@media screen and ( min-width: 769px ) {
+  .slider__wrapper {
+    grid-template-areas: "memes memes"
+                          "titles controls";
+  }
+}
+
 .slider__toggle {
   display: none;
 }
@@ -39,9 +46,17 @@ body {
   display: flex;
   justify-content: center;
 
-  aspect-ratio: 1.5;
+  aspect-ratio: 1.8;
 
   background-color: var(--background-image-color);
+}
+
+@media screen and ( min-width: 769px ) {
+  .slider__memes-wrapper {
+    grid-area: memes;
+
+    aspect-ratio: 2.5;
+  }
 }
 
 .meme__wrapper {
@@ -55,6 +70,12 @@ body {
   transition: width 1s;
 }
 
+@media screen and ( min-width: 769px ) {
+  .meme__wrapper {
+    max-width: 35%;
+  }
+}
+
 .slider__meme {
   display: block;
   width: 100%;
@@ -64,8 +85,14 @@ body {
 .slider__controls-wrapper {
   display: flex;
   gap: 0.5rem;
+  justify-self: center;
+}
 
-  margin: 0 auto;
+@media screen and ( min-width: 769px ) {
+  .slider__controls-wrapper {
+    grid-area: controls;
+    justify-self: right;
+  }
 }
 
 .slider__control {
@@ -110,6 +137,12 @@ h2 {
 .meme-titles__wrapper {
   justify-self: start;
   display: flex;
+}
+
+@media screen and ( min-width: 769px ) {
+  .meme-titles__wrapper {
+    grid-area: titles;
+  }
 }
 
 .meme-title {
