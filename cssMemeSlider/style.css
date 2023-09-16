@@ -63,7 +63,7 @@ h1 {
   width: 0%;
   max-width: 50%;
 
-  transition: width 1s;
+  transition: width 0.5s;
 }
 
 .slider__meme {
@@ -96,7 +96,7 @@ h1 {
   border: 0.2rem solid var(--color-additional);
   border-radius: 50%;
 
-  transition: border-color 1s, background-color 1s;
+  transition: border-color 0.5s, background-color 0.5s;
 }
 
 @media screen and (hover: hover) {
@@ -130,7 +130,7 @@ h2 {
   opacity: 0;
   margin: 0;
 
-  transition: width 1s, opacity 1s;
+  transition: width 0.5s, opacity 0.5s;
 }
 
 /* footer */
@@ -149,7 +149,7 @@ footer a {
   color: var(--color-brand);
   text-decoration: underline 0.1rem transparent;
   text-underline-offset: 0.5rem;
-  transition: text-decoration-color 1s;
+  transition: text-decoration-color 0.5s;
 }
 
 @media screen and (hover: hover) {
