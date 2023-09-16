@@ -29,14 +29,6 @@ h1 {
   margin: 0 auto;
 }
 
-@media screen and ( min-width: 769px ) {
-  h1 {
-    font-size: 3.5rem;
-
-    text-align: center;
-  }
-}
-
 .wrapper {
   max-width: 144rem;
   margin: 0 auto;
@@ -47,13 +39,6 @@ h1 {
   display: grid;
   grid-template-rows: repeat(3, auto);
   gap: 1rem;
-}
-
-@media screen and ( min-width: 769px ) {
-  .slider__wrapper {
-    grid-template-areas: "memes memes"
-                          "titles controls";
-  }
 }
 
 .slider__toggle {
@@ -70,14 +55,6 @@ h1 {
   background-color: var(--background-image-color);
 }
 
-@media screen and ( min-width: 769px ) {
-  .slider__memes-wrapper {
-    grid-area: memes;
-
-    aspect-ratio: 2.5;
-  }
-}
-
 .meme__wrapper {
   display: flex;
   justify-content: center;
@@ -87,12 +64,6 @@ h1 {
   max-width: 50%;
 
   transition: width 1s;
-}
-
-@media screen and ( min-width: 769px ) {
-  .meme__wrapper {
-    max-width: 35%;
-  }
 }
 
 .slider__meme {
@@ -105,13 +76,6 @@ h1 {
   display: flex;
   gap: 0.5rem;
   justify-self: center;
-}
-
-@media screen and ( min-width: 769px ) {
-  .slider__controls-wrapper {
-    grid-area: controls;
-    justify-self: right;
-  }
 }
 
 .slider__control {
@@ -158,12 +122,6 @@ h2 {
   display: flex;
 }
 
-@media screen and ( min-width: 769px ) {
-  .meme-titles__wrapper {
-    grid-area: titles;
-  }
-}
-
 .meme-title {
   width: 0;
   overflow: hidden;
@@ -185,12 +143,6 @@ footer {
 .footer-info {
   border-top: 0.1rem solid var(--color-additional);
   padding: 1rem 0;
-}
-
-@media screen and ( min-width: 769px ) {
-  .footer-info {
-  text-align: center;
-  }
 }
 
 footer a {
@@ -292,4 +244,41 @@ footer a {
     background-color: var(--color-brand);
     border-color: var(--color-brand);
   }
+}
+
+/* media */
+@media screen and ( min-width: 769px ) {
+  h1 {
+    font-size: 3.5rem;
+
+    text-align: center;
+  }
+
+  .slider__wrapper {
+    grid-template-areas: "memes memes"
+                          "titles controls";
+  }
+
+  .slider__memes-wrapper {
+    grid-area: memes;
+
+    aspect-ratio: 2.5;
+  }
+
+  .meme__wrapper {
+    max-width: 35%;
+  }
+
+  .slider__controls-wrapper {
+    grid-area: controls;
+    justify-self: right;
+  }
+
+  .meme-titles__wrapper {
+    grid-area: titles;
+  }
+
+  .footer-info {
+    text-align: center;
+    }
 }
